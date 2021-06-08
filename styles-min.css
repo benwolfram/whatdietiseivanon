@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: 700;
+  src: url("../fonts/HKGrotesk-Bold.eot");
+  src: url("../fonts/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HKGrotesk-Bold.woff2") format("woff2"), url("../fonts/HKGrotesk-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HKGrotesk";
+  font-weight: 500;
+  src: url("../fonts/HKGrotesk-Medium.eot");
+  src: url("../fonts/HKGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HKGrotesk-Medium.woff2") format("woff2"), url("../fonts/HKGrotesk-Medium.woff") format("woff");
+}
+
+html, body {
+  font-family: "HKGrotesk", Arial, Helvetica, sans-serif;
+  color: #000;
+  height: 100%;
+}
+
+header {
+  padding: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 120px);
+}
+
+.container {
+  height: 90px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.text {
+  -webkit-animation: snow 7s cubic-bezier(.97,.1,.91,.74);
+  animation: snow 7s cubic-bezier(.97,.1,.91,.74);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+@-webkit-keyframes snow {
+  0% {
+    opacity: 1;
+    transform: translateY(calc(-100% - 50px));
+  }
+  96% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes snow {
+  0% {
+    opacity: 1;
+    transform: translateY(calc(-100% - 50px));
+  }
+  96% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
